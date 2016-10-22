@@ -1,7 +1,7 @@
 # File: hw6.py
 # Author: Uzoma Uwanamodo
 # Date: 10/21/2016
-# Section: 06
+# Section: 05
 # E-mail: uu3@umbc.edu
 # Description:
 # A simple math helper program
