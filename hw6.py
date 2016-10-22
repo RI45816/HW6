@@ -52,12 +52,12 @@ def createIntList(SENTINEL):
     intList = []
     
     # Prompt user for integers
-    promptInt =int( input("Please enter a number, %s to stop: " % SENTINEL))
+    promptInt = int(input("Please enter a number, %s to stop: " % SENTINEL))
     
     # Continue to prompt user for integers until they input SENTINEL value
     while promptInt != SENTINEL:
         intList.append(promptInt)
-        promptInt =int( input("Please enter a number, %s to stop: " % SENTINEL))
+        promptInt = int(input("Please enter a number, %s to stop: " % SENTINEL))
     
     return intList
 
@@ -73,7 +73,7 @@ def main():
     numLists = int(input("How many lists would you like to create? "))
     
     # Create the lists (start indexing from 1 instead of 0)
-    for i in range(1,numLists+1):
+    for i in range(1, numLists + 1):
         
         # Display List #
         print("\nYou are creating list #%s" % i)
@@ -85,7 +85,7 @@ def main():
         currentList = createIntList(SENTINEL)
         
         # Print the list, the sum, and the product
-        print("For the list",currentList,"\nThe summation is",summation(*currentList),"\nThe product is",multiply(*currentList))
+        print("For the list", currentList, "\nThe summation is", summation(*currentList), "\nThe product is", multiply(*currentList))
         
     # Thank user after all the lists have been operated on
     print("Thank you for using the Simple Math Helper")
